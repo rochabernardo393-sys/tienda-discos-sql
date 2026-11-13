@@ -1,6 +1,6 @@
 # Proyecto Tienda de discos: base de datos y consultas SQL
 ## Descripción
-Base de datos de una tienda de discos, hecha con SQLite y Python. En ella practico el diseño de tablas relacionadas y las consultas con `JOIN` ,`GROUP BY`, `HAVING` y `LEFT JOIN`. 
+Base de datos de una tienda de discos, hecha con SQLite y Python. En ella practico el diseño de tablas relacionadas y las consultas con `JOIN`, `GROUP BY`, `HAVING` y `LEFT JOIN`. 
 ## Esquema
 La base de datos tiene 6 tablas:
 
@@ -8,8 +8,7 @@ La base de datos tiene 6 tablas:
 |---|---|
 |`artistas` | El nombre y el país de origen de cada artista |
 |`generos` | Los géneros musicales (Rock, Pop, Jazz) |
-|`discos` | Título, año, precio y stock de cada disco, y a qué artista y género pertenece
-|
+|`discos` | Título, año, precio y stock de cada disco, y a qué artista y género pertenece |
 |`clientes` | Nombre, email, ciudad y fecha de alta de cada cliente |
 |`ventas` | Cada compra: qué cliente la hizo y en qué fecha |
 |`detalle_venta` | Los discos de cada compra, con la cantidad y el precio en el momento de la venta |

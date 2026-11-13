@@ -57,7 +57,7 @@ WHERE dv.disco_id IS NULL;
 
 --8. Ingresos y número de venta de cada mes 
 SELECT strftime('%Y-%m', v.fecha) AS mes,
-       COUNT(DISTINCT v.id) AS ventas,
+       COUNT(DISTINCT v.id) AS venta,
        ROUND(SUM(dv.cantidad * dv.precio_unitario),2) AS ingresos
 FROM ventas v
 JOIN detalle_venta dv ON dv.venta_id = v.id
@@ -71,4 +71,4 @@ SELECT c.nombre,
        c.fecha_alta
 FROM clientes c
 LEFT JOIN ventas v ON v.cliente_id = c.id
-WHERE v.id IS NULL 
+WHERE v.id IS NULL;
